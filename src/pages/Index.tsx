@@ -7,8 +7,9 @@ const Index = () => {
     frontend: ["React.js", "Vue.js"],
     backend: ["Python", "Node.js", "Go", "Kafka"],
     database: ["MongoDB", "PostgreSQL"],
-    cloud: ["AWS"],
+    cloud: ["AWS", "Digital Ocean"],
     ai: ["AI LLM"],
+    OS: ["Linux"],
     automation: ["n8n", "Workflow Automation"],
   };
 
