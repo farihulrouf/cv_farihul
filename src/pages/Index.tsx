@@ -8,6 +8,8 @@ const Index = () => {
     backend: ["Python", "Node.js", "Go"],
     database: ["MongoDB", "PostgreSQL"],
     cloud: ["AWS"],
+    ai: ["AI LLM"],
+    automation: ["n8n", "Workflow Automation"],
   };
 
   const experiences = [
@@ -23,6 +25,10 @@ const Index = () => {
       title: "Data Scraping",
       description: "Web scraping and data extraction solutions",
     },
+    {
+      title: "Automation & Workflow",
+      description: "Building automated workflows using n8n and other automation tools. Get in touch for automation solutions!",
+    },
   ];
 
   return (
@@ -32,19 +38,24 @@ const Index = () => {
         <div className="container mx-auto max-w-4xl">
           <div className="animate-in fade-in slide-in-from-bottom-4 duration-1000">
             <h1 className="text-5xl md:text-6xl font-bold text-primary-foreground mb-4">
-              Full Stack Developer
+              Farihul Rouf
             </h1>
-            <p className="text-xl md:text-2xl text-primary-foreground/90 mb-6">
+            <p className="text-xl md:text-2xl text-primary-foreground/90 mb-2">
+              Full Stack Developer | AI LLM Specialist
+            </p>
+            <p className="text-lg text-primary-foreground/80 mb-6">
               7 Years of Professional Experience
             </p>
             <div className="flex flex-wrap gap-4 text-primary-foreground/80">
               <div className="flex items-center gap-2">
                 <Mail className="h-5 w-5" />
-                <span>Available for opportunities</span>
+                <a href="mailto:farihulrouf@gmail.com" className="hover:text-primary-foreground transition-colors">
+                  farihulrouf@gmail.com
+                </a>
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="h-5 w-5" />
-                <span>Remote / On-site</span>
+                <span>+62 823 3389 9903</span>
               </div>
             </div>
           </div>
@@ -58,8 +69,9 @@ const Index = () => {
           <Card className="p-6 bg-cv-section-bg border-border">
             <p className="text-lg text-card-foreground leading-relaxed">
               Experienced Full Stack Developer with 7 years of expertise in building scalable web applications. 
-              Proficient in both frontend and backend technologies, with a strong focus on delivering high-quality 
-              solutions. Specialized in data processing, analytics, and automation.
+              Proficient in both frontend and backend technologies, with strong capabilities in AI LLM integration 
+              and workflow automation. Specialized in data processing, social media analytics, transcription services, 
+              and building automated solutions using tools like n8n.
             </p>
           </Card>
         </div>
@@ -130,6 +142,30 @@ const Index = () => {
                 ))}
               </div>
             </Card>
+
+            <Card className="p-6 border-border">
+              <h3 className="text-xl font-semibold mb-4 text-primary">AI & Automation</h3>
+              <div className="flex flex-wrap gap-2">
+                {skills.ai.map((skill) => (
+                  <Badge 
+                    key={skill} 
+                    className="bg-cv-skill-bg text-primary border-cv-skill-border hover:bg-primary hover:text-primary-foreground transition-colors"
+                    variant="outline"
+                  >
+                    {skill}
+                  </Badge>
+                ))}
+                {skills.automation.map((skill) => (
+                  <Badge 
+                    key={skill} 
+                    className="bg-cv-skill-bg text-primary border-cv-skill-border hover:bg-primary hover:text-primary-foreground transition-colors"
+                    variant="outline"
+                  >
+                    {skill}
+                  </Badge>
+                ))}
+              </div>
+            </Card>
           </div>
         </div>
       </section>
@@ -162,7 +198,9 @@ const Index = () => {
           </p>
           <div className="flex justify-center gap-6">
             <a 
-              href="#" 
+              href="https://github.com/farihulrouf" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-2 text-primary hover:text-accent transition-colors"
               aria-label="GitHub Profile"
             >
@@ -170,7 +208,9 @@ const Index = () => {
               <span>GitHub</span>
             </a>
             <a 
-              href="#" 
+              href="https://www.linkedin.com/in/farihulrouf/" 
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-2 text-primary hover:text-accent transition-colors"
               aria-label="LinkedIn Profile"
             >
@@ -178,7 +218,7 @@ const Index = () => {
               <span>LinkedIn</span>
             </a>
             <a 
-              href="mailto:contact@example.com" 
+              href="mailto:farihulrouf@gmail.com" 
               className="flex items-center gap-2 text-primary hover:text-accent transition-colors"
               aria-label="Email Contact"
             >
