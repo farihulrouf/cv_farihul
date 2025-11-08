@@ -5,7 +5,7 @@ import { Mail, MapPin, Github, Linkedin } from "lucide-react";
 const Index = () => {
   const skills = {
     frontend: ["React.js", "Vue.js"],
-    backend: ["Python", "Node.js", "Go"],
+    backend: ["Python", "Node.js", "Go", "Kafka"], // ← tambahkan Kafka di sini
     database: ["MongoDB", "PostgreSQL"],
     cloud: ["AWS"],
     ai: ["AI LLM"],
