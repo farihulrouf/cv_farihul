@@ -57,6 +57,11 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        cv: {
+          "section-bg": "hsl(var(--cv-section-bg))",
+          "skill-bg": "hsl(var(--cv-skill-bg))",
+          "skill-border": "hsl(var(--cv-skill-border))",
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
